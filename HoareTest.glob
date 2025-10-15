@@ -1,0 +1,337 @@
+DIGEST e9799915aa102bc1fa71f4b90adde16f
+FPLF.HoareTest
+R73:78 Stdlib.Strings.String <> <> lib
+R105:109 PLF.Hoare <> <> lib
+ax 123:129 <> MISSING
+mod 146:150 <> Check
+R216:222 PLF.HoareTest <> MISSING defax
+R216:222 PLF.HoareTest <> MISSING defax
+R415:418 Corelib.Init.Datatypes <> Some constr
+R415:418 Corelib.Init.Datatypes <> Some constr
+R598:601 Corelib.Init.Datatypes <> None constr
+R598:601 Corelib.Init.Datatypes <> None constr
+R683:687 PLF.HoareTest Check <> mod
+R715:719 PLF.Hoare <> <> lib
+R729:733 PLF.HoareTest Check <> mod
+def 737:745 <> Unnamed_thm
+R742:745 PLF.Hoare <> :::'True' not
+R897:911 PLF.Hoare <> hoare_pre_false prfax
+R930:938 PLF.Hoare <> Assertion def
+binder 924:924 <> P:3
+binder 926:926 <> Q:4
+R946:948 PLF.Imp <> com ind
+binder 942:942 <> c:5
+R968:972 PLF.Imp <> state def
+binder 963:964 <> st:6
+R975:977 Corelib.Init.Logic <> not def
+R980:980 PLF.HoareTest <> P:3 var
+R982:983 PLF.HoareTest <> st:6 var
+R989:1006 PLF.Hoare <> valid_hoare_triple def
+R1008:1008 PLF.HoareTest <> P:3 var
+R1010:1010 PLF.HoareTest <> c:5 var
+R1012:1012 PLF.HoareTest <> Q:4 var
+R897:911 PLF.Hoare <> hoare_pre_false prfax
+R930:938 PLF.Hoare <> Assertion def
+binder 924:924 <> P:7
+binder 926:926 <> Q:8
+R946:948 PLF.Imp <> com ind
+binder 942:942 <> c:9
+R968:972 PLF.Imp <> state def
+binder 963:964 <> st:10
+R975:977 Corelib.Init.Logic <> not def
+R980:980 PLF.HoareTest <> P:7 var
+R982:983 PLF.HoareTest <> st:10 var
+R989:1006 PLF.Hoare <> valid_hoare_triple def
+R1008:1008 PLF.HoareTest <> P:7 var
+R1010:1010 PLF.HoareTest <> c:9 var
+R1012:1012 PLF.HoareTest <> Q:8 var
+R1064:1078 PLF.Hoare <> hoare_pre_false prfax
+def 1081:1089 <> Unnamed_thm
+R1086:1089 PLF.Hoare <> :::'True' not
+R1261:1278 PLF.Hoare <> assertion_sub_ex1' prfax
+R1283:1300 PLF.Hoare <> valid_hoare_triple def
+R1315:1319 PLF.Imp <> state def
+binder 1310:1311 <> st:11
+R1328:1329 Corelib.Init.Peano <> le ind
+R1356:1359 PLF.Hoare <> Aexp def
+R1333:1344 PLF.Hoare <> Aexp_of_aexp def
+R1347:1349 PLF.Imp <> AId constr
+R1351:1351 PLF.Imp <> X def
+R1362:1363 PLF.HoareTest <> st:11 var
+R1384:1387 PLF.Hoare <> Aexp def
+R1368:1378 PLF.Hoare <> Aexp_of_nat def
+R1390:1391 PLF.HoareTest <> st:11 var
+R1399:1403 PLF.Imp <> CAsgn constr
+R1405:1405 PLF.Imp <> X def
+R1408:1412 PLF.Imp <> AMult constr
+R1415:1418 PLF.Imp <> ANum constr
+R1424:1426 PLF.Imp <> AId constr
+R1428:1428 PLF.Imp <> X def
+R1446:1450 PLF.Imp <> state def
+binder 1441:1442 <> st:12
+R1459:1460 Corelib.Init.Peano <> le ind
+R1487:1490 PLF.Hoare <> Aexp def
+R1464:1475 PLF.Hoare <> Aexp_of_aexp def
+R1478:1480 PLF.Imp <> AId constr
+R1482:1482 PLF.Imp <> X def
+R1493:1494 PLF.HoareTest <> st:12 var
+R1516:1519 PLF.Hoare <> Aexp def
+R1499:1509 PLF.Hoare <> Aexp_of_nat def
+R1522:1523 PLF.HoareTest <> st:12 var
+R1261:1278 PLF.Hoare <> assertion_sub_ex1' prfax
+R1283:1300 PLF.Hoare <> valid_hoare_triple def
+R1315:1319 PLF.Imp <> state def
+binder 1310:1311 <> st:13
+R1328:1329 Corelib.Init.Peano <> le ind
+R1356:1359 PLF.Hoare <> Aexp def
+R1333:1344 PLF.Hoare <> Aexp_of_aexp def
+R1347:1349 PLF.Imp <> AId constr
+R1351:1351 PLF.Imp <> X def
+R1362:1363 PLF.HoareTest <> st:13 var
+R1384:1387 PLF.Hoare <> Aexp def
+R1368:1378 PLF.Hoare <> Aexp_of_nat def
+R1390:1391 PLF.HoareTest <> st:13 var
+R1399:1403 PLF.Imp <> CAsgn constr
+R1405:1405 PLF.Imp <> X def
+R1408:1412 PLF.Imp <> AMult constr
+R1415:1418 PLF.Imp <> ANum constr
+R1424:1426 PLF.Imp <> AId constr
+R1428:1428 PLF.Imp <> X def
+R1446:1450 PLF.Imp <> state def
+binder 1441:1442 <> st:14
+R1459:1460 Corelib.Init.Peano <> le ind
+R1487:1490 PLF.Hoare <> Aexp def
+R1464:1475 PLF.Hoare <> Aexp_of_aexp def
+R1478:1480 PLF.Imp <> AId constr
+R1482:1482 PLF.Imp <> X def
+R1493:1494 PLF.HoareTest <> st:14 var
+R1516:1519 PLF.Hoare <> Aexp def
+R1499:1509 PLF.Hoare <> Aexp_of_nat def
+R1522:1523 PLF.HoareTest <> st:14 var
+R1577:1594 PLF.Hoare <> assertion_sub_ex1' prfax
+def 1597:1605 <> Unnamed_thm
+R1602:1605 PLF.Hoare <> :::'True' not
+R1691:1708 PLF.Hoare <> assertion_sub_ex2' prfax
+R1713:1730 PLF.Hoare <> valid_hoare_triple def
+R1745:1749 PLF.Imp <> state def
+binder 1740:1741 <> st:15
+R1758:1760 Corelib.Init.Logic <> and ind
+R2011:2019 PLF.Hoare <> Assertion def
+R1913:1917 PLF.Imp <> state def
+binder 1907:1909 <> st0:16
+R1931:1932 Corelib.Init.Peano <> le ind
+R1952:1955 PLF.Hoare <> Aexp def
+R1936:1946 PLF.Hoare <> Aexp_of_nat def
+R1958:1960 PLF.HoareTest <> st0:16 var
+R1981:1984 PLF.Hoare <> Aexp def
+R1965:1975 PLF.Hoare <> Aexp_of_nat def
+R1987:1989 PLF.HoareTest <> st0:16 var
+R2022:2023 PLF.HoareTest <> st:15 var
+R1879:1887 PLF.Hoare <> Assertion def
+R1781:1785 PLF.Imp <> state def
+binder 1775:1777 <> st0:17
+R1799:1800 Corelib.Init.Peano <> le ind
+R1820:1823 PLF.Hoare <> Aexp def
+R1804:1814 PLF.Hoare <> Aexp_of_nat def
+R1826:1828 PLF.HoareTest <> st0:17 var
+R1849:1852 PLF.Hoare <> Aexp def
+R1833:1843 PLF.Hoare <> Aexp_of_nat def
+R1855:1857 PLF.HoareTest <> st0:17 var
+R1890:1891 PLF.HoareTest <> st:15 var
+R2031:2035 PLF.Imp <> CAsgn constr
+R2037:2037 PLF.Imp <> X def
+R2040:2043 PLF.Imp <> ANum constr
+R2062:2066 PLF.Imp <> state def
+binder 2057:2058 <> st:18
+R2075:2077 Corelib.Init.Logic <> and ind
+R2342:2350 PLF.Hoare <> Assertion def
+R2237:2241 PLF.Imp <> state def
+binder 2231:2233 <> st0:19
+R2255:2256 Corelib.Init.Peano <> le ind
+R2283:2286 PLF.Hoare <> Aexp def
+R2260:2271 PLF.Hoare <> Aexp_of_aexp def
+R2274:2276 PLF.Imp <> AId constr
+R2278:2278 PLF.Imp <> X def
+R2289:2291 PLF.HoareTest <> st0:19 var
+R2312:2315 PLF.Hoare <> Aexp def
+R2296:2306 PLF.Hoare <> Aexp_of_nat def
+R2318:2320 PLF.HoareTest <> st0:19 var
+R2353:2354 PLF.HoareTest <> st:18 var
+R2203:2211 PLF.Hoare <> Assertion def
+R2098:2102 PLF.Imp <> state def
+binder 2092:2094 <> st0:20
+R2116:2117 Corelib.Init.Peano <> le ind
+R2137:2140 PLF.Hoare <> Aexp def
+R2121:2131 PLF.Hoare <> Aexp_of_nat def
+R2143:2145 PLF.HoareTest <> st0:20 var
+R2173:2176 PLF.Hoare <> Aexp def
+R2150:2161 PLF.Hoare <> Aexp_of_aexp def
+R2164:2166 PLF.Imp <> AId constr
+R2168:2168 PLF.Imp <> X def
+R2179:2181 PLF.HoareTest <> st0:20 var
+R2214:2215 PLF.HoareTest <> st:18 var
+R1691:1708 PLF.Hoare <> assertion_sub_ex2' prfax
+R1713:1730 PLF.Hoare <> valid_hoare_triple def
+R1745:1749 PLF.Imp <> state def
+binder 1740:1741 <> st:21
+R1758:1760 Corelib.Init.Logic <> and ind
+R2011:2019 PLF.Hoare <> Assertion def
+R1913:1917 PLF.Imp <> state def
+binder 1907:1909 <> st0:22
+R1931:1932 Corelib.Init.Peano <> le ind
+R1952:1955 PLF.Hoare <> Aexp def
+R1936:1946 PLF.Hoare <> Aexp_of_nat def
+R1958:1960 PLF.HoareTest <> st0:22 var
+R1981:1984 PLF.Hoare <> Aexp def
+R1965:1975 PLF.Hoare <> Aexp_of_nat def
+R1987:1989 PLF.HoareTest <> st0:22 var
+R2022:2023 PLF.HoareTest <> st:21 var
+R1879:1887 PLF.Hoare <> Assertion def
+R1781:1785 PLF.Imp <> state def
+binder 1775:1777 <> st0:23
+R1799:1800 Corelib.Init.Peano <> le ind
+R1820:1823 PLF.Hoare <> Aexp def
+R1804:1814 PLF.Hoare <> Aexp_of_nat def
+R1826:1828 PLF.HoareTest <> st0:23 var
+R1849:1852 PLF.Hoare <> Aexp def
+R1833:1843 PLF.Hoare <> Aexp_of_nat def
+R1855:1857 PLF.HoareTest <> st0:23 var
+R1890:1891 PLF.HoareTest <> st:21 var
+R2031:2035 PLF.Imp <> CAsgn constr
+R2037:2037 PLF.Imp <> X def
+R2040:2043 PLF.Imp <> ANum constr
+R2062:2066 PLF.Imp <> state def
+binder 2057:2058 <> st:24
+R2075:2077 Corelib.Init.Logic <> and ind
+R2342:2350 PLF.Hoare <> Assertion def
+R2237:2241 PLF.Imp <> state def
+binder 2231:2233 <> st0:25
+R2255:2256 Corelib.Init.Peano <> le ind
+R2283:2286 PLF.Hoare <> Aexp def
+R2260:2271 PLF.Hoare <> Aexp_of_aexp def
+R2274:2276 PLF.Imp <> AId constr
+R2278:2278 PLF.Imp <> X def
+R2289:2291 PLF.HoareTest <> st0:25 var
+R2312:2315 PLF.Hoare <> Aexp def
+R2296:2306 PLF.Hoare <> Aexp_of_nat def
+R2318:2320 PLF.HoareTest <> st0:25 var
+R2353:2354 PLF.HoareTest <> st:24 var
+R2203:2211 PLF.Hoare <> Assertion def
+R2098:2102 PLF.Imp <> state def
+binder 2092:2094 <> st0:26
+R2116:2117 Corelib.Init.Peano <> le ind
+R2137:2140 PLF.Hoare <> Aexp def
+R2121:2131 PLF.Hoare <> Aexp_of_nat def
+R2143:2145 PLF.HoareTest <> st0:26 var
+R2173:2176 PLF.Hoare <> Aexp def
+R2150:2161 PLF.Hoare <> Aexp_of_aexp def
+R2164:2166 PLF.Imp <> AId constr
+R2168:2168 PLF.Imp <> X def
+R2179:2181 PLF.HoareTest <> st0:26 var
+R2214:2215 PLF.HoareTest <> st:24 var
+R2408:2425 PLF.Hoare <> assertion_sub_ex2' prfax
+def 2428:2436 <> Unnamed_thm
+R2433:2436 PLF.Hoare <> :::'True' not
+R2595:2607 PLF.Hoare <> if_minus_plus prfax
+R2612:2629 PLF.Hoare <> valid_hoare_triple def
+R2640:2644 PLF.Imp <> state def
+R2649:2652 PLF.Hoare <> :::'True' not
+R2659:2661 PLF.Imp <> CIf constr
+R2664:2666 PLF.Imp <> BLe constr
+R2669:2671 PLF.Imp <> AId constr
+R2673:2673 PLF.Imp <> X def
+R2677:2679 PLF.Imp <> AId constr
+R2681:2681 PLF.Imp <> Y def
+R2686:2690 PLF.Imp <> CAsgn constr
+R2692:2692 PLF.Imp <> Z def
+R2695:2700 PLF.Imp <> AMinus constr
+R2703:2705 PLF.Imp <> AId constr
+R2707:2707 PLF.Imp <> Y def
+R2711:2713 PLF.Imp <> AId constr
+R2715:2715 PLF.Imp <> X def
+R2727:2731 PLF.Imp <> CAsgn constr
+R2733:2733 PLF.Imp <> Y def
+R2736:2740 PLF.Imp <> APlus constr
+R2743:2745 PLF.Imp <> AId constr
+R2747:2747 PLF.Imp <> X def
+R2751:2753 PLF.Imp <> AId constr
+R2755:2755 PLF.Imp <> Z def
+R2774:2778 PLF.Imp <> state def
+binder 2769:2770 <> st:27
+R2788:2789 Corelib.Init.Logic <> eq ind
+R2791:2793 Corelib.Init.Datatypes <> nat ind
+R2820:2823 PLF.Hoare <> Aexp def
+R2797:2808 PLF.Hoare <> Aexp_of_aexp def
+R2811:2813 PLF.Imp <> AId constr
+R2815:2815 PLF.Imp <> Y def
+R2826:2827 PLF.HoareTest <> st:27 var
+R2986:2989 PLF.Hoare <> Aexp def
+R2849:2853 PLF.Imp <> state def
+binder 2843:2845 <> st0:28
+R2867:2882 Stdlib.Arith.PeanoNat Nat add def
+R2909:2912 PLF.Hoare <> Aexp def
+R2886:2897 PLF.Hoare <> Aexp_of_aexp def
+R2900:2902 PLF.Imp <> AId constr
+R2904:2904 PLF.Imp <> X def
+R2915:2917 PLF.HoareTest <> st0:28 var
+R2956:2959 PLF.Hoare <> Aexp def
+R2933:2944 PLF.Hoare <> Aexp_of_aexp def
+R2947:2949 PLF.Imp <> AId constr
+R2951:2951 PLF.Imp <> Z def
+R2962:2964 PLF.HoareTest <> st0:28 var
+R2992:2993 PLF.HoareTest <> st:27 var
+R2595:2607 PLF.Hoare <> if_minus_plus prfax
+R2612:2629 PLF.Hoare <> valid_hoare_triple def
+R2640:2644 PLF.Imp <> state def
+R2649:2652 PLF.Hoare <> :::'True' not
+R2659:2661 PLF.Imp <> CIf constr
+R2664:2666 PLF.Imp <> BLe constr
+R2669:2671 PLF.Imp <> AId constr
+R2673:2673 PLF.Imp <> X def
+R2677:2679 PLF.Imp <> AId constr
+R2681:2681 PLF.Imp <> Y def
+R2686:2690 PLF.Imp <> CAsgn constr
+R2692:2692 PLF.Imp <> Z def
+R2695:2700 PLF.Imp <> AMinus constr
+R2703:2705 PLF.Imp <> AId constr
+R2707:2707 PLF.Imp <> Y def
+R2711:2713 PLF.Imp <> AId constr
+R2715:2715 PLF.Imp <> X def
+R2727:2731 PLF.Imp <> CAsgn constr
+R2733:2733 PLF.Imp <> Y def
+R2736:2740 PLF.Imp <> APlus constr
+R2743:2745 PLF.Imp <> AId constr
+R2747:2747 PLF.Imp <> X def
+R2751:2753 PLF.Imp <> AId constr
+R2755:2755 PLF.Imp <> Z def
+R2774:2778 PLF.Imp <> state def
+binder 2769:2770 <> st:29
+R2788:2789 Corelib.Init.Logic <> eq ind
+R2791:2793 Corelib.Init.Datatypes <> nat ind
+R2820:2823 PLF.Hoare <> Aexp def
+R2797:2808 PLF.Hoare <> Aexp_of_aexp def
+R2811:2813 PLF.Imp <> AId constr
+R2815:2815 PLF.Imp <> Y def
+R2826:2827 PLF.HoareTest <> st:29 var
+R2986:2989 PLF.Hoare <> Aexp def
+R2849:2853 PLF.Imp <> state def
+binder 2843:2845 <> st0:30
+R2867:2882 Stdlib.Arith.PeanoNat Nat add def
+R2909:2912 PLF.Hoare <> Aexp def
+R2886:2897 PLF.Hoare <> Aexp_of_aexp def
+R2900:2902 PLF.Imp <> AId constr
+R2904:2904 PLF.Imp <> X def
+R2915:2917 PLF.HoareTest <> st0:30 var
+R2956:2959 PLF.Hoare <> Aexp def
+R2933:2944 PLF.Hoare <> Aexp_of_aexp def
+R2947:2949 PLF.Imp <> AId constr
+R2951:2951 PLF.Imp <> Z def
+R2962:2964 PLF.HoareTest <> st0:30 var
+R2992:2993 PLF.HoareTest <> st:29 var
+R3047:3059 PLF.Hoare <> if_minus_plus prfax
+def 3062:3070 <> Unnamed_thm
+R3067:3070 PLF.Hoare <> :::'True' not
+R4025:4039 PLF.Hoare <> hoare_pre_false prfax
+R4109:4126 PLF.Hoare <> assertion_sub_ex1' prfax
+R4196:4213 PLF.Hoare <> assertion_sub_ex2' prfax
+R4278:4290 PLF.Hoare <> if_minus_plus prfax
