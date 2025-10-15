@@ -393,7 +393,11 @@ Theorem hoare_pre_false : forall (P Q : Assertion) c,
   (forall st, ~ (P st)) ->
   {{P}} c {{Q}}.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  unfold valid_hoare_triple. intros.
+  assert (~ P st). { apply H. }
+  contradiction.
+Qed.
+
 (** [] *)
 
 (* ################################################################# *)
@@ -1108,14 +1112,20 @@ Example assertion_sub_ex1' :
     X := 2 * X
   {{ X <= 10 }}.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  eapply hoare_consequence_pre.
+  - apply hoare_asgn.
+  - assertion_auto.
+Qed.
 
 Example assertion_sub_ex2' :
   {{ 0 <= 3 /\ 3 <= 5 }}
     X := 3
   {{ 0 <= X /\ X <= 5 }}.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  eapply hoare_consequence_pre.
+  - apply hoare_asgn.
+  - assertion_auto.
+Qed.
 
 (** [] *)
 
@@ -1443,8 +1453,14 @@ Theorem if_minus_plus :
     end
   {{Y = X + Z}}.
 Proof.
-  (* FILL IN HERE *) Admitted.
-(** [] *)
+  apply hoare_if.
+  - eapply hoare_consequence_pre.
+    + apply hoare_asgn.
+    + assertion_auto''.
+  - eapply hoare_consequence_pre.
+    + apply hoare_asgn.
+    + assertion_auto''.
+Qed.
 
 (* ----------------------------------------------------------------- *)
 (** *** Exercise: One-sided conditionals *)

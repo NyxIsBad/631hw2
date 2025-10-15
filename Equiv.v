@@ -186,8 +186,17 @@ Theorem skip_right : forall c,
     <{ c ; skip }>
     c.
 Proof.
-  (* FILL IN HERE *) Admitted.
-(** [] *)
+  intros c st st'.
+  split; intros H.
+  - (* -> *)
+    inversion H. subst. 
+    inversion H5. subst.
+    apply H2.
+  - (* <- *)
+    apply E_Seq with st'.
+    + apply H.
+    + apply E_Skip. 
+Qed.
 
 (** Similarly, here is a simple equivalence that optimizes [if]
     commands: *)
@@ -278,7 +287,20 @@ Theorem if_false : forall b c1 c2,
     <{ if b then c1 else c2 end }>
     c2.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros b c1 c2 Hb.
+  split; intros H.
+  - (* -> *)
+    inversion H; subst.
+    + (* b evaluates to true (contradiction) *)
+      unfold bequiv in Hb. simpl in Hb.
+      rewrite Hb in H5.
+      discriminate.
+    + (* b evaluates to false *)
+      assumption.
+  - (* <- *)
+    apply E_IfFalse; try assumption.
+    unfold bequiv in Hb. simpl in Hb.
+    apply Hb.  Qed.
 (** [] *)
 
 (** **** Exercise: 3 stars, standard (swap_if_branches)
@@ -291,7 +313,33 @@ Theorem swap_if_branches : forall b c1 c2,
     <{ if b then c1 else c2 end }>
     <{ if ~ b then c2 else c1 end }>.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros b c1 c2.
+  split; intros H.
+  - (* -> *)
+    inversion H; subst.
+    + (* b evaluates to true *)
+      apply E_IfFalse. 
+      * simpl. rewrite H5. reflexivity.
+      * assumption.
+    + (* b evaluates to false *)
+      apply E_IfTrue.
+      * simpl. rewrite H5. reflexivity.
+      * assumption.
+  - (* <- *)
+    inversion H; subst.
+    + (* ~b evaluates to true *)
+      apply E_IfFalse. 
+      * simpl in H5. destruct (beval st b).
+        -- discriminate.
+        -- reflexivity.
+      * assumption.
+    + (* ~b evaluates to false *)
+      apply E_IfTrue.
+      * simpl in H5. destruct (beval st b).
+        -- reflexivity.
+        -- discriminate.
+      * assumption.
+Qed.
 (** [] *)
 
 (** For [while] loops, we can give a similar pair of theorems.  A loop
@@ -734,7 +782,21 @@ Theorem CIf_congruence : forall b b' c1 c1' c2 c2',
   cequiv <{ if b then c1 else c2 end }>
          <{ if b' then c1' else c2' end }>.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros b b' c1 c1' c2 c2' Hb Hc1 Hc2.
+  split; intros H; inversion H; subst; clear H.
+  - apply E_IfTrue.
+      * rewrite <- Hb. apply H5.
+      * apply Hc1. apply H6.
+  - apply E_IfFalse.
+      * rewrite <- Hb. apply H5.
+      * apply Hc2. apply H6.
+  - apply E_IfTrue.
+      * rewrite Hb. apply H5.
+      * apply Hc1. apply H6.
+  - apply E_IfFalse.
+      * rewrite Hb. apply H5.
+      * apply Hc2. apply H6.
+Qed.
 (** [] *)
 
 (** For example, here are two equivalent programs and a proof of their
@@ -1404,7 +1466,21 @@ Proof.
 Theorem inequiv_exercise:
   ~ cequiv <{ while true do skip end }> <{ skip }>.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  unfold cequiv. intros contra. 
+  assert (H: forall st st', ~(st =[ while true do skip end ]=> st')).
+  {
+    intros. apply while_true_nonterm. apply refl_bequiv.
+  }
+  assert (H1: exists st st', st =[ skip ]=> st').
+  {
+    exists empty_st. exists empty_st.
+    apply E_Skip.
+  }
+  destruct H1 as [st1 [st2 H1]].
+  apply contra in H1.
+  apply H in H1.
+  apply H1.
+Qed.
 (** [] *)
 
 (* ################################################################# *)
