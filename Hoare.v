@@ -114,7 +114,12 @@ Definition assertion3 : Assertion :=
             ~ (((S (st Z)) * (S (st Z))) <= st X).
 Definition assertion4 : Assertion :=
   fun st => st Z = max (st X) (st Y).
-(* FILL IN HERE *)
+(* 
+  Assertion 1: The value of variable X in state st is less than or equal to the value of variable Y in state st.
+  Assertion 2: The value of variable X in state st is equal to 3 or less than or equal to the value of variable Y in state st.
+  Assertion 3: The square of the value of variable Z in state st is less than or equal to the value of variable X in state st, and the square of the successor of the value of variable Z in state st is not less than or equal to the value of variable X in state st.
+  Assertion 4: The value of variable Z in state st is equal to the maximum of the values of variables X and Y in state st.
+*)
 End ExAssertions.
 (** [] *)
 
@@ -228,6 +233,7 @@ Notation "( x )" := x (in custom assn at level 0, x at level 99) : assertion_sco
  *)
 
 
+
 Notation "$ f" := f (in custom assn at level 0, f constr at level 0) : assertion_scope.
 Notation "x" := (x%assertion) (in custom assn at level 0, x constr at level 0) : assertion_scope.
 
@@ -327,27 +333,27 @@ Notation "P <<->> Q" := (P ->> Q /\ Q ->> P)
     Which of the following Hoare triples are _valid_ -- i.e., the
     claimed relation between [P], [c], and [Q] is true?
 
-   1) {{True}} X := 5 {{X = 5}}
+   1) {{True}} X := 5 {{X = 5}} This is valid.
 
-   2) {{X = 2}} X := X + 1 {{X = 3}}
+   2) {{X = 2}} X := X + 1 {{X = 3}} This is valid.
 
-   3) {{True}} X := 5; Y := 0 {{X = 5}}
+   3) {{True}} X := 5; Y := 0 {{X = 5}} This is valid.
 
-   4) {{X = 2 /\ X = 3}} X := 5 {{X = 0}}
+   4) {{X = 2 /\ X = 3}} X := 5 {{X = 0}} This is invalid.
 
-   5) {{True}} skip {{False}}
+   5) {{True}} skip {{False}} This is invalid.
 
-   6) {{False}} skip {{True}}
+   6) {{False}} skip {{True}} This is valid.
 
-   7) {{True}} while true do skip end {{False}}
+   7) {{True}} while true do skip end {{False}} This is invalid.
 
    8) {{X = 0}}
         while X = 0 do X := X + 1 end
-      {{X = 1}}
+      {{X = 1}} This is valid.
 
    9) {{X = 1}}
         while X <> 0 do X := X + 1 end
-      {{X = 100}}
+      {{X = 100}} This is invalid.
 *)
 (* FILL IN HERE
 

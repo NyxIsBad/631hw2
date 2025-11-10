@@ -1,6 +1,6 @@
 COQMFFLAGS := -Q . PLF  
 
-ALLVFILES := Maps.v Imp.v Equiv.v Hoare.v  EquivTest.v  HoareTest.v
+ALLVFILES := Maps.v Imp.v Equiv.v Hoare.v Smallstep.v SmallstepTest.v
 # Hoare2.v HoareAsLogic.v Smallstep.v Types.v Stlc.v StlcProp.v MoreStlc.v Sub.v Typechecking.v Records.v References.v RecordSub.v Norm.v PE.v Postscript.v Bib.v LibTactics.v UseTactics.v UseAuto.v
 #  Hoare2Test.v  HoareAsLogicTest.v  SmallstepTest.v  TypesTest.v  StlcTest.v  StlcPropTest.v  MoreStlcTest.v  SubTest.v  TypecheckingTest.v  RecordsTest.v  ReferencesTest.v  RecordSubTest.v  NormTest.v  PETest.v  PostscriptTest.v  BibTest.v  LibTacticsTest.v  UseTacticsTest.v  UseAutoTest.v
 

@@ -183,7 +183,8 @@ Example test_optimize_0plus:
   optimize_0plus (APlus (ANum 2)
                         (APlus (ANum 0)
                                (APlus (ANum 0) (ANum 1))))
-  = APlus (ANum 2) (ANum 1).
+  = APlus (ANum 2) (ANum 1). 
+  (* the first equation is (2 + (0 + (0 + 1))) = (2 + 1)) *)
 Proof. reflexivity. Qed.
 
 (** But if we want to be certain the optimization is correct --
@@ -2088,3 +2089,12 @@ End BreakImp.
     [] *)
 
 (* 2025-10-08 12:39 *)
+
+Check fun (x: bool) => [x].
+Check fun (x: Type) => Some 0.
+(* ill typed *)
+(* ill typed *)
+Check (True, False).
+Check Some (fun (X: Prop) (Y: Prop) => (X /\ Y)).
+Check fun (X: Type) => [].
+Check (fun (P Q : Prop) (p : P) (q : Q) => conj p q).
